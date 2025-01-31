@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        /*reset*/
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;}
+        li{list-style: none;}
+        a:link,a:visited{color: black;text-decoration: none;}
+
+        body{
+            font-size: 12px;
+            font-family: "Noto Sans KR", serif;
+            background-color: #eee;
+        }
+
+        header.wrapper{
+            /* background-color: pink; */
+            height: 72px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrap{
+            width: 1200px;
+            margin: 0 auto;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu > ul{
+            display: flex;
+            font-size: 16px;
+            gap: 30px;
+        }
+
+        .menu > ul > li{
+            /* background-color: yellow; */
+        }
+    
+        .menu > ul> li> a{
+            display: block;
+            padding: 10px;
+            /* background-color: pink;
+             */
+        }
+
+        .logo > a > img{height: 27px;}
+
+        h1.logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        .util{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .visual{
+            background-color:#02d7ff ;
+            height: 640px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            /* padding: 20px 0; */
+        }
+
+        .container h2{text-align:center;margin-bottom: 10px;}
+        .container .h2_desc{text-align: center;}
+
+        .content{
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .content li{
+            width: 380px;
+            background-color: white;
+            border-radius:18px ;
+            box-shadow: 10px 10px 20px #bbb;
+        }
+
+        .content li a{
+            display: block;
+            padding: 24px;
+        }
+
+        .content .circle{
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: red;
+        }
+
+        .container > .bundle_tag{
+            display: block;
+        }
+
+        .bundle_tag{background-color: #eee;}
+
+        .bundle_tag a{
+            padding: 12px;
+            display: inline-block;
+            font-size: 20px;
+            background-color: rgb(202, 201, 201);
+            margin: 6px;
+            border-radius: 30px;
+        }
+
+        .bundle_tag 
+
+        /*common*/
+        h2{font-size: 42px;}
+        h3{font-size: 26px;letter-spacing: -0.6px;line-height: 1.4;}
+        h4{font-size: 36px;}
+        .h2_desc{font-size: 18px;}
+        .h3_more{font-size: 16px;}
+
+        /*padding<tag< class < inline< style<important*/
+        .py20{padding: 20px 0 !important;}
+        .py30{padding: 30px 0 !important;}
+        .py40{padding: 40px 0 !important;}
+
+        .mb20{margin-bottom: 20px !important;}
+        .mb40{margin-bottom: 40px !important;}
+        .mb50{margin-bottom: 50px !important;}
+
+    </style>
+</head>
+<body>
+    <header class="wrapper"> <!--display:block bgw-->
+        <div class="wrap"> <!--w1200 m0auto-->
+            <h1 class="logo"> 
+                <a href="#"><img src="img_logo (1).png" alt=""></a>
+            </h1>
+            <nav class="menu">
+                <ul> <!--display : flex--> 
+                    <li><a href="#">카카오영입</a></a></li>
+                    <li><a href="#">크루이야기</a></li>
+                    <li><a href="#">진행중공고</a></li>
+                    <li><a href="#">지원안내</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="util">
+                <a href="#">로그인</a>
+            </div>
+        </div>
+    </header>
+    <div class="visual mb40">
+        <a href="#"><img src="banner01.png" alt=""></a>
+    </div>
+    <div class="container py30">
+        <h2>
+            Join the krew</h2>
+        <p class="h2_desc">
+            카카오 크루는 우리의 일상을 더 좋게 만들고 싶은 멋진 동료입니다.<br>
+            다양한 생각을 자유롭게 나누며, 언제나 놀라운 결과를 만들어내죠.<br>
+            당신도 세상을 바꾸고 싶나요? 카카오로 오세요!!
+        </p>
+    </div>
+    <div class="container py40 mb20">
+        <h4 class="mb40">😊관심있는 공고를 찾아보세요</h4>
+        <div class="bundle_tag mb40">
+            <a href="#">#테크</a>
+            <a href="#">#서비스비즈</a>
+            <a href="#">#디자인</a>
+            <a href="#">#브랜드</a>
+            <a href="#">#스태프</a>
+        </div>
+        <ul class="content mb50">
+            <li>
+                <a href="#">
+                    <img src="icon_img01.png" alt="">
+                <h3 class="mb20">100%리얼 스토리<br>카카오 크루 이야기</h3>
+                <span class="h3_more">크루이야기 살펴보기</span>
+                <div class="circle"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icon_img02.png" alt="">
+                <h3 class="mb20">휴가부터 의료진까지<br>크루 복지와 혜택</h3>
+                <span class="h3_more">크루 혜택 알아보기</span>
+                <div class="circle"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="icon_img03.png" alt="">
+                <h3 class="mb20">카카오 합류를 위한<br>영입절차</h3>
+                <span class="h3_more">영입절차 확인하기</span>
+                <div class="circle"></div>
+                </a>
+            </li>
+
+        </ul>
+        
+    </div>
+    
+    <div class="cotainer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est modi impedit asperiores dolores, tenetur, alias quisquam laboriosam dolorem facilis vero laborum dignissimos sed vitae necessitatibus delectus mollitia excepturi veritatis perferendis dolorum possimus dolore, iste consequuntur sint officia! Excepturi et facilis veritatis eveniet ad quisquam. Rerum, tempora iure quas cum ut quibusdam qui expedita sapiente nesciunt autem assumenda, odit voluptate adipisci libero perferendis provident ipsa nam quae consectetur maxime architecto dolorem asperiores aperiam ex. Ex error placeat harum pariatur. Atque, veniam cupiditate quis distinctio tempore libero ab perferendis quaerat accusantium necessitatibus et maxime magni natus eum. Autem harum illum nesciunt quod, voluptates voluptatum rerum dolor mollitia. Nam perferendis suscipit voluptas ratione quas placeat, similique doloribus accusamus iusto necessitatibus vel alias totam eius et nisi natus facilis quos perspiciatis eaque nulla impedit temporibus. Sed quo reprehenderit earum laboriosam voluptate eligendi. Quia tempore beatae quisquam laborum atque aliquam eveniet eius rerum saepe, ut a velit recusandae possimus? Quos accusantium illo dolor! Esse aperiam adipisci reiciendis ipsum vero itaque sit aut quaerat nihil doloribus quam consequatur deserunt fugit, delectus illum dicta explicabo veniam voluptate. Atque perspiciatis modi, adipisci minus placeat doloremque deserunt at quis voluptatibus ducimus facere expedita repellat quo pariatur necessitatibus in dolorum accusantium perferendis explicabo voluptates harum laborum inventore. Ipsam debitis quisquam dolor veritatis ad aspernatur quas? Unde animi odio consequuntur provident ut voluptas cupiditate, suscipit odit ipsa sed ex, sunt dolore explicabo obcaecati ipsam veritatis, impedit itaque dicta enim totam tempora reiciendis possimus! Doloremque reiciendis necessitatibus consequatur non consectetur, odit error quos quo nam qui odio accusamus voluptatum. Aperiam perferendis facere atque est modi aliquid dicta excepturi, quae voluptate placeat ex officiis totam. Minima ut molestias, hic, facere ad error eveniet expedita, ullam a illo excepturi minus! Quod praesentium nesciunt laboriosam cupiditate nemo laudantium quas facilis officia distinctio, ea voluptatum blanditiis suscipit labore assumenda quaerat dolor accusantium dolore vero tempora error! Veritatis maiores, ipsa, earum modi, necessitatibus minima atque voluptatibus odit consectetur dignissimos velit corrupti. Enim rerum harum mollitia velit non quo deserunt fuga laboriosam minus voluptate ratione porro, et beatae nam vero. Dolorem quas quod nisi qui accusantium blanditiis, esse dolor dolore ducimus corrupti illo deleniti nesciunt, magnam doloribus consequatur, corporis at aspernatur quam officiis eveniet sequi dignissimos aperiam laborum? Ea quaerat tempora adipisci aut nemo laudantium atque explicabo similique molestias perspiciatis vel nam debitis ducimus reprehenderit, placeat odit omnis nobis iste sapiente. Beatae illo itaque fugiat officia consequuntur repellat corrupti. Ipsum unde, quibusdam harum culpa asperiores dolorum ullam fugiat ea eveniet quasi nisi, consequatur labore commodi aut obcaecati incidunt nulla corrupti impedit! Placeat reprehenderit eveniet excepturi repellendus perspiciatis perferendis magnam, consequatur exercitationem illum odit quo ad adipisci accusamus officiis, quas voluptatem modi aliquam animi. Nostrum, aperiam nemo, dolor in suscipit atque impedit praesentium maiores quos, doloremque quasi! Quam cum quas dolor odio ipsum? Odio laborum qui laudantium vero iure architecto, voluptatibus tempore vel. Animi, ducimus porro labore officiis, deserunt consequatur nihil ab at alias pariatur fugit ut eaque doloribus sit inventore voluptate voluptas exercitationem minima! Harum, animi. Ad magnam voluptate suscipit iure unde ratione ullam, ipsa animi ea repellat soluta consequuntur nihil exercitationem quaerat perspiciatis quae voluptas facilis earum! Tempora pariatur adipisci voluptates minus dolore numquam molestias nobis debitis quae aliquam, sit quisquam quidem necessitatibus ut cum veritatis facilis fuga dolorum voluptate sunt voluptas. Hic non architecto dolores sint quae maiores eum consectetur, nemo autem possimus voluptates commodi perspiciatis, tempore labore tenetur nam sequi temporibus quos. Earum laboriosam impedit corporis saepe quas omnis dolore molestiae dolores eaque quam suscipit, quo totam neque odit tempore sint voluptates? Odio labore harum facilis ducimus ullam, laboriosam architecto tempora magnam explicabo doloribus! Excepturi fugiat nulla reprehenderit porro vitae. Veniam recusandae consequatur omnis illum. Sapiente repellendus natus omnis accusantium blanditiis ipsa vitae voluptatibus. Totam fuga, aliquam, quisquam ex corrupti ipsa tempora vitae quod cum quam repellat modi, voluptas nesciunt. Quod amet autem, hic similique, nobis odio totam, voluptatibus illo eius veniam qui quia! Eaque voluptate pariatur nobis, eius necessitatibus amet voluptatum veniam veritatis cumque neque obcaecati quidem quisquam sint error ut illum cum nemo consequuntur! Veritatis sunt nobis asperiores autem atque, maxime eum optio dicta quos excepturi alias. Enim sed culpa ipsum doloribus consequuntur fuga quis quo saepe iusto. Possimus unde illum dolorem ratione beatae, omnis numquam nisi, exercitationem fuga quidem similique explicabo molestiae sapiente tempora ipsam. Reprehenderit debitis facilis quasi blanditiis, mollitia consectetur nesciunt adipisci voluptates rerum id ea nobis vel sunt esse dicta et consequatur. Perspiciatis error accusamus dolorum commodi expedita cum enim adipisci quibusdam voluptas laboriosam dolor facere recusandae deserunt, laborum atque ad reiciendis ab, fuga nulla veniam illum deleniti? Cumque excepturi quo dolore molestias! Dolorum exercitationem cumque voluptas excepturi, vel accusamus ullam quisquam, error incidunt provident officia labore quaerat corporis tempora ipsam necessitatibus, repudiandae ipsum non. Aperiam, sit. Sit illum quis in nesciunt ullam, totam quas similique facilis vel iure? Similique, debitis doloribus enim suscipit excepturi animi cupiditate est cum possimus, quibusdam illo eos non? Fugit non ullam temporibus id veniam natus mollitia voluptas eos. Soluta minus impedit obcaecati, porro ea incidunt, odio excepturi aliquam nostrum, fugit dolores nobis? Repudiandae fuga temporibus fugit est magnam ab rerum nulla quidem, vero dolore saepe, itaque excepturi qui molestias. Odit quisquam asperiores, impedit blanditiis exercitationem illo minus ad, optio fuga quis culpa voluptas ab maiores perspiciatis ipsum voluptates eligendi vero et libero veritatis dolor omnis voluptatibus adipisci. Pariatur, quisquam aliquam. Rerum deleniti voluptates iste, error dolore laboriosam illum dolorum necessitatibus molestias consequatur et nulla sit numquam. Id illum commodi obcaecati architecto consectetur harum nemo vitae molestias ea ratione? Rerum voluptatibus eligendi consequatur commodi assumenda quae repudiandae impedit quam inventore iste cupiditate at, mollitia similique expedita iure quod. Consectetur tempora facere architecto assumenda consequatur quos, libero commodi quasi, praesentium non doloribus eveniet voluptatibus a totam similique perferendis unde quas odit! Provident, repudiandae? Quos nihil dolorum mollitia alias. Officia, odit inventore dicta neque cum nihil voluptates nulla sapiente impedit, animi id est quod eligendi praesentium esse rem hic numquam vero nobis possimus nemo perspiciatis suscipit deleniti? Iste repellendus cupiditate asperiores recusandae facilis, est sunt! Eum?</div>
+</body>
+</html>

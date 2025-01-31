@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+
+        html,body{height: 100%}
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrap{
+            background-color: green;
+            width: 500px;
+            height: 400px;
+            position: relative;
+            /* position: absolute; */
+            /* top: 50%;
+            left: 50%;
+            margin-left: -250px;
+            margin-top: -200px;
+            width: 500px; */
+
+        }
+
+        .wrap > div{
+            width: 100px;height: 100px;
+            position: absolute;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .box1{}
+        .wrap > .box2{
+            left: 50%;
+            margin-left: -50px;
+            background-color: blue;}
+        .box3{right: 0;}
+        .box4{right: 0;bottom: 0;}
+        .wrap > .box5{
+            background-color: blue;
+            left: 50%;
+            margin-left: -50px;
+            bottom: 0;
+        }
+        .box6{bottom: 0;}
+        .box7{
+            background-color: pink;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+        <div class="box6">box6</div>
+        <div class="box7">box7</div>
+    </div>
+    
+</body>
+</html>
